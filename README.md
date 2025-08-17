@@ -35,106 +35,115 @@ QueryWhisper/
 │── report/ # Auto-generated query-answer CSV logs
 │── requirements.txt # Python dependencies
 
-yaml
-Copy
-Edit
+## ⚙️ **Installation & Setup**
 
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
+1️⃣ Clone the Repository**
 ```bash
 git clone https://github.com/ashishamith/QueryWhisper.git
 cd QueryWhisper
+
 2️⃣ Create a Virtual Environment & Install Dependencies
-bash
-Copy
-Edit
 python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 
 pip install -r requirements.txt
+
+
 3️⃣ Configure Environment Variables
 Create a .env file in the project root:
-
-ini
-Copy
-Edit
 GROQ_API_KEY=your_groq_api_key
 MYSQL_HOST=localhost
 MYSQL_USER=root
 MYSQL_PASSWORD=yourpassword
 MYSQL_DATABASE=ecommerce
+
+
 4️⃣ Run the App
-bash
-Copy
-Edit
+
 python app.py
 The app will start at:
 👉 http://127.0.0.1:5000
 
+
 ▶️ Working Flow
+
 Here’s how QueryWhisper works step by step:
 
-Login
+🔑 1. Login
 
 User enters username & password on /login
 
 After authentication → redirected to Dashboard
 
-Ask a Question
+
+
+❓ 2. Ask a Question
 
 Example: "Which city has the most customers?"
 
-Natural Language → SQL
 
-LLaMA3 (via Groq API) converts the question into an optimized SQL query
+
+🧠 3. Natural Language → SQL
+
+LLaMA3 (Groq API) converts the question into an optimized SQL query
 
 Example:
 
-sql
-Copy
-Edit
 SELECT city, COUNT(*) AS total_customers
 FROM customers
 GROUP BY city
 ORDER BY total_customers DESC
 LIMIT 1;
-SQL Safety Check
+
+
+
+🛡️ 4. SQL Safety Check
 
 Regex filter ensures only SELECT queries are allowed
 
-Prevents INSERT, UPDATE, DELETE, DROP
+Blocks dangerous queries: INSERT, UPDATE, DELETE, DROP
 
-Execute Query
+
+
+
+⚡ 5. Execute Query
 
 Safe SQL runs against the connected MySQL database
 
 Raw results are fetched
 
-AI Explanation
+
+
+
+🤖 6. AI Explanation
 
 LLaMA3 generates a short, human-friendly answer
 
 Example: "Delhi has the highest number of customers (15)."
 
-Store Report
 
-Question, SQL, and AI answer are saved in /report/query_logs.csv
 
-Return Results
+📂 7. Store Report
+
+Saves Question, SQL, AI Answer in /report/query_logs.csv
+
+
+
+📊 8. Return Results
 
 Dashboard displays:
 
-Generated SQL
+✅ Generated SQL
 
-Query result table
+✅ Query result table
 
-AI-generated explanation
+✅ AI-generated explanation
+
+
 
 💡 Example Queries
+
 "Show the top 3 cities with the highest number of customers"
 
 "What is the ratio of customers in Delhi vs Mumbai?"
@@ -143,7 +152,11 @@ AI-generated explanation
 
 "Find the most common last name among customers"
 
+
+
+
 🚀 Future Improvements
+
 🔗 Support for PostgreSQL & SQLite
 
 📈 Interactive charts for query results
@@ -153,3 +166,25 @@ AI-generated explanation
 📊 Export reports in Excel & PDF formats
 
 🎯 Advanced fine-tuning for text-to-SQL accuracy
+
+
+
+
+
+
+
+
+[Manual Vs AI.pdf](https://github.com/user-attachments/files/21822656/Manual.Vs.AI.pdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
