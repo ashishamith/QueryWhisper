@@ -168,6 +168,9 @@ Dashboard displays:
 🎯 Advanced fine-tuning for text-to-SQL accuracy
 
 
+SAMPLE OOTPUT
+
+![image alt](https://github.com/ashishamith/QueryWhisper/blob/2e0f53ab230e2e41c54968e6056d8793660c27a4/Manual%20Vs%20AI.pdf) 
 
 
 
