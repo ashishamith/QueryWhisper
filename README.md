@@ -172,9 +172,23 @@ Dashboard displays:
 
 
 
+<img width="926" height="514" alt="image" src="https://github.com/user-attachments/assets/3b6f389d-377b-44a7-a30d-1b08ad9c8cf0" />
 
 
-[Manual Vs AI.pdf](https://github.com/user-attachments/files/21822656/Manual.Vs.AI.pdf)
+
+
+<img width="928" height="517" alt="image" src="https://github.com/user-attachments/assets/c872dd7c-4771-440a-9d6a-14ef801942b7" />
+
+
+
+
+
+<img width="925" height="518" alt="image" src="https://github.com/user-attachments/assets/4bcd68b8-2838-40d9-9c9d-b0da768d7f48" />
+
+
+
+
+
 
 
 
