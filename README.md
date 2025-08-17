@@ -170,7 +170,8 @@ Dashboard displays:
 
 SAMPLE OOTPUT
 
-![image alt](https://github.com/ashishamith/QueryWhisper/blob/2e0f53ab230e2e41c54968e6056d8793660c27a4/Manual%20Vs%20AI.pdf) 
+[Manual Vs AI.pdf](https://github.com/user-attachments/files/21822856/Manual.Vs.AI.pdf)
+
 
 
 
