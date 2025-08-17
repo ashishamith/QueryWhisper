@@ -171,9 +171,9 @@ Dashboard displays:
 
 
 
-SAMPLE OUTPUTS 
 
-[Manual Vs AI.pdf](https://github.com/user-attachments/files/21822823/Manual.Vs.AI.pdf)
+
+
 
 
 
