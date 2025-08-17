@@ -172,19 +172,10 @@ Dashboard displays:
 
 
 
-<img width="926" height="514" alt="image" src="https://github.com/user-attachments/assets/3b6f389d-377b-44a7-a30d-1b08ad9c8cf0" />
 
 
 
-
-<img width="928" height="517" alt="image" src="https://github.com/user-attachments/assets/c872dd7c-4771-440a-9d6a-14ef801942b7" />
-
-
-
-
-
-<img width="925" height="518" alt="image" src="https://github.com/user-attachments/assets/4bcd68b8-2838-40d9-9c9d-b0da768d7f48" />
-
+<img width="923" height="308" alt="Screenshot 2025-08-17 184238" src="https://github.com/user-attachments/assets/be2d428f-2e52-41d7-ae54-0abb5889d010" />
 
 
 
