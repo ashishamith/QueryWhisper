@@ -171,15 +171,9 @@ Dashboard displays:
 
 
 
+SAMPLE OUTPUTS 
 
-
-
-
-<img width="923" height="308" alt="Screenshot 2025-08-17 184238" src="https://github.com/user-attachments/assets/be2d428f-2e52-41d7-ae54-0abb5889d010" />
-
-
-
-
+[Manual Vs AI.pdf](https://github.com/user-attachments/files/21822823/Manual.Vs.AI.pdf)
 
 
 
