@@ -8,10 +8,12 @@ import textwrap
 from datetime import datetime
 
 app = Flask(__name__)
-app.secret_key = "super_secret_key"  # change for production
+app.secret_key = os.environ.get("SECRET_KEY", "fallback_secret")
+  # change for production
 
 # ---------- Groq API config ----------
-GROQ_API_KEY = " "  # replace if needed
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+ # replace if needed
 GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama3-70b-8192"  # recommended model; change if needed
 
@@ -239,7 +241,8 @@ def connect():
     username = request.form.get('username') or (request.json.get('username') if request.is_json else None)
     password = request.form.get('password') or (request.json.get('password') if request.is_json else None)
     database = request.form.get('database') or (request.json.get('database') if request.is_json else None)
-    host = 'localhost'
+    host = os.environ.get("MYSQL_HOST")
+
 
     if not username or not password or not database:
         return jsonify({"status": "error", "message": "username, password and database are required"}), 400
@@ -406,10 +409,9 @@ def test():
 
 if __name__ == "__main__":
     os.makedirs("report", exist_ok=True)
-    if __name__ == "__main__":
-        os.makedirs("report", exist_ok=True)
 
-        port = int(os.environ.get("PORT", 8080))
+    port = int(os.environ.get("PORT", 10000))
 
-        app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port)
+
 
