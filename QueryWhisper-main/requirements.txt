@@ -1,0 +1,12 @@
+Flask
+pymysql
+requests
+cachetools
+cryptography
+psycopg2
+sqlalchemy
+torch
+accelerate
+gunicorn
+
+
